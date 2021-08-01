@@ -248,7 +248,15 @@ Figure 5.3.5: UI after Selection
 
 #### Execution
 
-After selecting All the necessary options and clicking the execute button the program will run and a progress bar will appear. After finishing execution a message box will appear which will show the sample, class, and channels information. After finishing execution we can also see that the ”Classification Report” section has changed. If we select any ”Confusion Matrix” button, the confusion matrix of the respective classifier will appear which is shown in figure 5.3.9.
+After selecting All the necessary options and clicking the execute button the program will run and a progress bar will appear. After finishing execution a message box will appear which will show the sample, class, and channels information. After finishing execution we can also see that the ”Classification Report” section has changed.
+
+
+![UI](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/classification_report.PNG)
+```
+Figure 5.3.9: Classifiaction report
+```
+
+If we select any ”Confusion Matrix” button, the confusion matrix of the respective classifier will appear which is shown in figure 5.3.9.
 
 ![UI](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/conf_matrix.PNG)
 ```
