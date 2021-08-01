@@ -19,6 +19,8 @@ Electroencephalographic (EEG) data from nine people are included in this data se
 ### Proposed method
 
 The total process of the work that has been done here can be summed up in following way which is also shown graphically in 4.1.1.
+
+![diagram](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/diagram2.png)
 ```
 Figure 4.1.1: Working procedure
 ```
@@ -185,8 +187,11 @@ k= 1− 11 −−the hypothetical probability of chance agreement relative obser
 Confusion Matrix is a performance measurement for machine learning classification. A confusion matrix, also known as an error matrix[40], is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one (in unsupervised learning it is usually called a matching matrix). Each row of the matrix represents the instances in a predicted class, while each column represents the instances in an actual class[41].
 
 
-Figure 4.4.1: Confusion matrix for binary classification
 
+![CF matrix](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/conf_matrix_t.png)
+```
+Figure 4.4.1: Confusion matrix for binary classification
+```
 
 
 # IMPLEMENTATION
@@ -199,7 +204,7 @@ The implementation phase of the project is the development of the designs produc
 
  This design was chosen and implemented because of its clear layout and navigation structure. The final interface can be viewed in 5.2.1.
 
-
+![UI](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/UI_initial.PNG)
 ```
 Figure 5.2.1: The screenshot of the final UI
 ```
@@ -215,30 +220,15 @@ This section asks for necessary instruction from the user about the dataset whic
 #### Channel Selection
 
 This section asks for necessary instruction from the user about the channels which are present in the dataset. Selecting the button ”All Channels” results in the selection of all 22 channels. Otherwise through ”Manual Selection” the user can select necessary channels. By clicking the ”Manual selection” a pop-up window will open which is shown in 5.3.1.
-
+![UI](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/pop_ini.PNG)
 ```
 Figure 5.3.1: Manual Selection Pop up window
 ```
-Here we can see all available channels can be selected by checking their respective checkbox which will also result in the lighting up of the channel to green in the image on the right side of the window.it is shown in figure 5.3.2
+Here we can see all available channels can be selected by checking their respective checkbox which will also result in the lighting up of the channel to green in the image on the right side of the window.To reselect all the channels the user can click the button ”Check All”. To unselect all the channels the user can click the button ”Uncheck All” . After finishing the channel selection, clicking the okay button will save the selected channel list and close the pop-up window.
 
-```
-Figure 5.3.2: Selecting channels in Pop up window
-```
-To reselect all the channels the user can click the button ”Check All” which is shown in figure 5.3.3.
-
-
-```
-Figure 5.3.3: checking all in Manual Selection
-```
-To unselect all the channels the user can click the button ”Uncheck All” which is shown in figure 5.3.4. After finishing the channel selection, clicking the okay button will save the selected channel list and close the pop-up window.
-
-```
-Figure 5.3.4: Unchecking all in Manual Selection
-```
 #### Bandpass Filter
 
 This section asks for necessary instruction from the user about the bandpass filter specification. Selecting ”Butterworth” will result in the data be bandpass filtered using the” Butterworth” bandpass filter. Similarly selecting ”Chebyshev II” will result in the data be bandpass filtered using forward-reverse ”Chebyshev” bandpass filter. The lowcut and highcut of the frequency range are taken from the entry box. The order and sampling frequency are also taken from here.
-
 
 #### Feature Engineering
 
@@ -251,33 +241,19 @@ This section asks whether the classification report be shown as ”Accuracy” o
 #### Classification Report
 
 This section asks the user to select the models on which the dataset will be trained and tested. The user can select multiple models. The interface after all options has been selected can be viewed in 5.3.5.
-
+![UI](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/Capture.PNG)
 ```
 Figure 5.3.5: UI after Selection
 ```
 
 #### Execution
 
-After selecting All the necessary options and clicking the execute button the program will run and a progress bar will appear as shown in figure 5.3.6.
+After selecting All the necessary options and clicking the execute button the program will run and a progress bar will appear. After finishing execution a message box will appear which will show the sample, class, and channels information. After finishing execution we can also see that the ”Classification Report” section has changed. If we select any ”Confusion Matrix” button, the confusion matrix of the respective classifier will appear which is shown in figure 5.3.9.
 
+![UI](https://github.com/fahim19dipu/MI-Classifer/blob/main/readme%20images/conf_matrix.PNG)
 ```
-Figure 5.3.6: Progress bar
-```
-After finishing execution a message box will appear which will show the sample, class, and channels information shown in figure 5.3.7.
-
-```
-Figure 5.3.7: Trained dataset info
-```
-After finishing execution we can also see that the ”Classification Report” section has changed which is shown in figure 5.3.8.
-
-```
-Figure 5.3.8: Trained dataset info
-```
-If we select any ”Confusion Matrix” button, the confusion matrix of the respective classifier will appear which is shown in figure 5.3.9.
-
-
 Figure 5.3.9: Confusion Matrix
-
+```
 
 
 
